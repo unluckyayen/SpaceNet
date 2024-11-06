@@ -1,0 +1,492 @@
+:root{
+    --primary:Cyan;
+    --bg: black; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'poppins',sans-serif ;
+    background-color:black;
+    color: white;
+}
+
+
+
+.navbar{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color:black;
+    border-bottom:1px solid cyan;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 0.95;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: cyan;
+}
+
+.navbar .navbar-nav a{
+    color:white;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin:0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: cyan;
+}
+
+.navbar .navbar-nav a::after{
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom:0.1rem solid cyan;  
+  transform: scaleX(0);
+  transition:0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+    color:white;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+    color: cyan;
+}
+
+#hamburger-menu{
+    display:none;
+}
+
+
+
+/* hero section */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+ .hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg,rgb(0, 0, 0)30%,rgba(19, 18, 18, 0)60%);
+} 
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+#myVideo {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 125rem;
+    min-height:100;
+  }
+
+.hero .content{
+    position:relative;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 10;
+    padding: 20px;
+}
+
+
+.hero .content h1 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.hero .content h1 span{
+    color: cyan;
+}
+
+.hero .content p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+    position: relative;
+    font-weight: 10px;
+    color: white;
+    text-align:center;
+}
+
+.hero .content .cta{
+    margin-top:1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color:black;
+    background-color: aqua;
+    border-radius: 0.6rem;
+    box-shadow: 1px 1px rgb(14, 5, 5);
+    margin-left: 240.9px;
+}
+
+.content .cta a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* about section */
+.about,
+.note,
+.contact,
+.TVET,
+.more,
+.note{
+    padding: 7rem 7% 1.4rem;
+    position: relative;
+    background-color: black;
+}
+
+
+
+.about h2,
+.note h2,
+.contact h2,
+.Organisasi h3,
+.TVET h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+/* note modify start*/
+.success h3{
+text-align: center;
+}
+/* note modify end */
+.about h2 span,
+.note h2 span,
+.contact h2 span,
+.TVET h2 span{
+    color: cyan;
+}
+
+.about .row,
+.TVET .Space{
+    display: flex;
+}
+
+.about .row .about-img,
+.TVET .Space .Net-img {
+    flex:1 1 45rem;
+}
+
+.about .row .about-img img,
+.Net-img img{
+    width: 50rem;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.about .row .content,
+.Organisasi{
+    flex: 6 1 35rem;
+    padding:0 1rem;
+}
+
+.about .row .content h3,
+.Organisasi h3,
+.nota h3{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p,
+.Organisasi p,
+.nota p{
+    margin-bottom: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+
+/* note section */
+.note h2,
+.contact h2{
+    margin-bottom: 1rem;
+}
+.note p,
+.contact p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.note .row{
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row ::after{
+    content: "";
+}
+
+.note-img {
+    text-align: center;
+    width: 33.33%;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    margin:1rem;
+}
+
+.note .row .note-img img{
+    border-radius: 40px;
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note .note-title{
+    margin-top: 1rem auto 0.5rem;
+}
+
+.note p{
+    font-size: 1.3rem;
+}
+/* more section start*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container .success img{
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin: 1rem;
+}
+
+
+.flex-container .Success{
+    border-radius: 100;
+}
+/* more section end */
+
+/* contact section */
+.container {
+    max-width: 80
+    rem;
+    margin: 50px auto;
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map{
+    object-fit: cover;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: black;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color:cyan;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+}
+
+footer .sosial{
+    padding: 1rem 0;
+}
+
+footer .sosial a{
+    color: #fff;
+    margin: 1rem;
+}
+
+footer .sosial a:hover,
+footer .link a:hover{
+    color: aqua;
+}
+
+footer .link{
+    margin-bottom: 1.6rem;
+}
+
+footer .link a{
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit{
+    font-size: 1px;
+}
+
+footer .credit a{
+    color: #fff;
+    font-weight: 400;
+}
+/* media queries */
+/* laptop */
+@media (max-width: 1366px){
+    html{
+        font-size:75% ;
+    }
+}
+/* tablet */
+@media (max-width: 758px){
+    html{
+        font-size:62.5%;
+    }
+    #hamburger-menu{
+        display: inline-block;
+    }
+    .navbar .navbar-nav{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        background-color: black;
+        width: 30rem;
+        height: 100vh;
+        transition: 3s;
+    }
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+      color:white;
+      display: block;
+      margin:1.5rem;
+      padding:0.5rem;
+      font-size: 2rem;
+    }
+    .navbar .navbar-nav a::after{
+        transform-origin:0 0 ;
+    }
+    .navbar .navbar-nav a:hover::after{
+        transform:scaleX(0.2)
+    }
+    .about .row{
+        flex-wrap: wrap;
+    }
+    .about .row .about-img img{
+        height:24rem ;
+        object-fit: cover;
+        object-position: center;
+    }
+    .about .row .content{
+        padding: 0;
+    }
+    .about .row .content h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .about .row .content p{
+        font-size: 1.6rem;
+        }
+
+    .note p {
+        font-size: 1.2rem;
+    }
+
+    .contact .row {
+        flex-wrap:wrap;
+    }
+
+    .contact .row .map{
+        height: 30rem;
+    }
+
+    .contact .row form{
+        padding-top: 0;
+    }
+}
+/* mobile phone */
+@media (max-width: 450px){
+    html{
+        font-size:55%;
+    }
+}
+

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('astranout.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'sans-serif', sans-serif;
+    font-size: 15px;
+
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box {
+    margin: auto;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    height: 440px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+input[id="email"],
+[id="Password"],
+button {
+    display: block;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 3px solid black;
+    background: transparent;
+    margin: 25px;
+    outline: none;
+}
+
+::placeholder {
+    color: cyan;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+button {
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    color: cyan;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
+
+.rem {
+    margin-left: -200px;
+    left: -110;
+    top: 0px;
+}
+
+#Forgot {
+    position: relative;
+    right: -110px;
+    top: -19px;
+    text-decoration: none;
+    color: cyan;
+}
+
+#reg {
+    text-decoration: none;
+    color: cyan;
+}
